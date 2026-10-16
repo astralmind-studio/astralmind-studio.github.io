@@ -1,0 +1,31 @@
+:root{--cream:#F7EEDD;--sand:#F0E0C4;--ink:#3A2E28;--muted:#6B5547;--rust:#B5391B;--olive:#5A6B35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:18px/1.6 ui-rounded,"SF Pro Rounded",-apple-system,system-ui,"PingFang SC",sans-serif}
+a{color:var(--rust)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:20px;align-items:center;padding:18px 0;font-weight:700}
+nav .brand{margin-right:auto;display:flex;gap:10px;align-items:center;color:var(--ink);text-decoration:none}
+nav .brand img{width:34px;height:34px;border-radius:8px}
+nav a{text-decoration:none;color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:24px 0 56px}
+.eyebrow{color:var(--rust);font-weight:800;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
+h1{font-size:clamp(36px,6vw,56px);line-height:1.05;margin:.3em 0;font-weight:900;letter-spacing:-.02em}
+h2{font-size:30px;line-height:1.15;font-weight:900;margin:0 0 .5em}
+.lead{font-size:21px;color:var(--muted)}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:800;padding:16px 28px;border-radius:999px}
+.btn.soon{background:#8c7d72;pointer-events:none}
+.hero img{width:100%;max-width:360px;display:block;margin:0 auto;border-radius:44px;box-shadow:0 30px 70px rgba(58,46,40,.3)}
+section{padding:40px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--sand);border-radius:22px;padding:22px}
+.card h3{margin:0 0 6px;font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.shots{display:flex;gap:16px;overflow-x:auto;padding:8px 0 20px;scroll-snap-type:x mandatory}
+.shots img{height:520px;border-radius:26px;scroll-snap-align:start;box-shadow:0 12px 30px rgba(58,46,40,.18)}
+.note{color:var(--muted);font-size:15px}
+footer{padding:36px 0 56px;color:var(--muted);font-size:15px;border-top:1px solid #e0cfb3;margin-top:24px}
+.prose{max-width:680px;padding-bottom:40px}
+.prose h2{font-size:24px;margin-top:1.6em}
+details{background:var(--sand);border-radius:16px;padding:14px 18px;margin:10px 0}
+summary{font-weight:800;cursor:pointer}
+@media(max-width:760px){.hero,.cards{grid-template-columns:1fr}.shots img{height:440px}}
